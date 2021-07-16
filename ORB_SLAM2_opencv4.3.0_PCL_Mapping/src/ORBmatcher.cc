@@ -27,7 +27,8 @@
 
 #include "Thirdparty/DBoW2/DBoW2/FeatureVector.h"
 
-#include <stdint-gcc.h>
+//#include <stdint-gcc.h>//为什么要用gcc int?不太懂。
+#include <stdint.h>      //使用stdint 可以保证通用性，clang编译器
 
 using namespace std;
 
