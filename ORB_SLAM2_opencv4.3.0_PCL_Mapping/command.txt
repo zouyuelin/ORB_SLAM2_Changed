@@ -1,0 +1,9 @@
+./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM2.yaml Examples/RGB-D/rgbd_dataset_freiburg2_pioneer_slam2/
+./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM1.yaml ~/dataset/rgbd_dataset_freiburg1_desk/
+./Examples/Monocular/mono_camera Vocabulary/ORBvoc.txt Examples/Monocular/camera1.yaml
+
+./Examples/RGB-D/rgbd_tum ./Vocabulary/ORBvoc.txt ./Examples/RGB-D/TUM1.yaml ~/dataset/rgbd_dataset_freiburg1_desk/ ~/dataset/rgbd_dataset_freiburg1_desk/associate.txt
+
+./Examples/RGB-D/rgbd_tum ./Vocabulary/ORBvoc.txt ./Examples/RGB-D/TUM2.yaml ~/dataset/rgbd_dataset_freiburg2_pioneer_slam2/ ~/dataset/rgbd_dataset_freiburg2_pioneer_slam2/associate.txt
+
+rosrun ORB_SLAM2 Mono ./Vocabulary/ORBvoc.txt Examples/ROS/ORB_SLAM2/Asus.yaml
