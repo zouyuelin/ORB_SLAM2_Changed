@@ -16,7 +16,7 @@ catkin_make
 # 针对ros的路径设置我们需要在~/.bashrc文件中加入下面两行
 ```shell
 source /opt/ros/noetic/setup.bash
-source ～/catkin_ws/devel/setup.bash
+source ~/catkin_ws/devel/setup.bash
 ```
 
 # 然后执行
