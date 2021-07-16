@@ -46,8 +46,18 @@ class LoopClosing
 public:
 
     typedef pair<set<KeyFrame*>,int> ConsistentGroup;    
+    /*typedef map<KeyFrame*,g2o::Sim3,std::less<KeyFrame*>,
+        Eigen::aligned_allocator<std::pair<const KeyFrame*, g2o::Sim3> > > KeyFrameAndPose;*/
+    
+     /*使用 KeyFrame *const，根据clang编译器报错提示修改：
+     * /usr/include/c++/9/bits/stl_map.h:122: error: static_assert failed due to requirement '
+     * is_same<std::pair<const ORB_SLAM2::KeyFrame *, g2o::Sim3>,
+     * std::pair<ORB_SLAM2::KeyFrame *const, g2o::Sim3> >::value' "std::map must have the same value_type as its allocator"
+      static_assert(is_same<typename _Alloc::value_type, value_type>::value,
+      ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
     typedef map<KeyFrame*,g2o::Sim3,std::less<KeyFrame*>,
-        Eigen::aligned_allocator<std::pair<const KeyFrame*, g2o::Sim3> > > KeyFrameAndPose;
+            Eigen::aligned_allocator<std::pair<KeyFrame *const, g2o::Sim3> > > KeyFrameAndPose;
 
 public:
 
