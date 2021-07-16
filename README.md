@@ -34,7 +34,7 @@ catkin_make
 
 
 
-# 首先编译g2o
+# 首先到<font color=red>g2o_with_orbslam2</font>文件夹 编译g2o
 ```shell
 mkdir build
 cd build 
