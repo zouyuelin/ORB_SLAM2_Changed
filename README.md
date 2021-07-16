@@ -1,3 +1,7 @@
+相关源码原本是高翔针对PCL建图修改得到的，但库和软件更新很快，安装新版的opencv，pcl等库甚至是新版的ubuntu操作系统都无法正常运行。
+本人就这些问题在高翔 ORB_SLAM2_PCL_Mapping源码上进行了部分修改，可以正常在Ubuntu 20.04,OpenCV 4.2.0 ，Eigen3.5以上的环境中运行。
+
+
 # 建立ROS文件夹 
 ```shell
 mkdir -P ~/catkin_ws/src
