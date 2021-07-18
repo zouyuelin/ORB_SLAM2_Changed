@@ -1,4 +1,4 @@
-./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM2.yaml Examples/RGB-D/rgbd_dataset_freiburg2_pioneer_slam2/
+./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM2.yaml ~/dataset/rgbd_dataset_freiburg2_pioneer_slam2/
 ./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM1.yaml ~/dataset/rgbd_dataset_freiburg1_desk/
 ./Examples/Monocular/mono_camera Vocabulary/ORBvoc.txt Examples/Monocular/camera1.yaml
 
