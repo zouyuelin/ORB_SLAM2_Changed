@@ -11,5 +11,7 @@ cd ~/catkin_ws
 cakin_make
 
 # 运行
+```shell
 source ~/catkin_ws/devel/setup.bash
 rosrun RGBD_camera camera_RGBD_node
+```
