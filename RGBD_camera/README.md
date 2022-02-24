@@ -1,8 +1,8 @@
-# 发布话题供ORB_SLAM2 使用, 专用双目
+# 发布话题供ORB_SLAM2 使用, 专用realsense相机
 
 ```shell
-camera/left/image_raw
-camera/right/image_raw
+"camera/rgb/image_raw"
+"camera/depth_registered/image_raw" 
 ```
 
 # 构建方法
@@ -12,4 +12,4 @@ cakin_make
 
 # 运行
 source ~/catkin_ws/devel/setup.bash
-rosrun camera camera_stereo_node
+rosrun RGBD_camera camera_RGBD_node
